@@ -72,6 +72,9 @@ export default function HomePage(): JSX.Element {
                         transition={{
                             delay: 0.5,
                         }}>
+
+                        <iframe width="765" height="350" src="https://www.youtube.com/embed/FllLSF6rFzQ" title="Website with Particles.js for u/Mgsfan10 on reddit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                         {description}
                     </Animate>
 
