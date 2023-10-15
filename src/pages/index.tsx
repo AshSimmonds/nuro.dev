@@ -31,7 +31,7 @@ const ACTIONS: Array<NavigationItem> = [
     {
         type: NavigationItemType.LINK,
         external: true,
-        href: 'https://github.com/nurodev',
+        href: 'https://github.com/AshSimmonds/nuro.dev',
         icon: <Icon className="mr-3" icon="feather:github" />,
         text: 'GitHub',
     },
@@ -50,6 +50,21 @@ export default function HomePage(): JSX.Element {
             {isBirthday && <Event event={EventType.BIRTHDAY} />}
             <div className="min-h-screen flex items-center justify-center py-12">
                 <div className="max-w-md sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl w-full space-y-8 text-center">
+
+                    <Animate
+                        as="h1"
+                        animation={{
+                            opacity: [0, 1],
+                            scale: [0.75, 1],
+                        }}
+                        className="max-w-xs mt-4 md:mt-8 mx-auto text-base text-green-400 sm:text-lg md:text-xl md:max-w-3xl"
+                        transition={{
+                            delay: 0.5,
+                        }}>
+                        Re-create this site: <a href="https://www.youtube.com/watch?v=FllLSF6rFzQ">https://www.youtube.com/watch?v=FllLSF6rFzQ</a>
+                    </Animate>
+
+
                     <Animate
                         as="h1"
                         animation={{
@@ -72,8 +87,6 @@ export default function HomePage(): JSX.Element {
                         transition={{
                             delay: 0.5,
                         }}>
-
-                        <iframe width="765" height="350" src="https://www.youtube.com/embed/FllLSF6rFzQ" title="Website with Particles.js for u/Mgsfan10 on reddit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                         {description}
                     </Animate>
